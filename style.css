@@ -1,0 +1,59 @@
+body{
+  background-image: url("fondo.jpg");
+  background-position: center;
+  background-size: cover;
+}
+#titulo
+{
+  font-size: 23px;
+  width: 100%;
+  margin: 0px;
+  box-shadow:5px 5px 5px grey;
+}
+#subtitulo
+{
+  /*float none ayuda a mantener el div en el centro sin que se mueva en la pantalla*/
+  float: none ; 
+  background: white ; 
+  padding: 10px; 
+  border-radius: 20px; 
+  color: black;
+  box-shadow:5px 5px 5px grey;
+}
+#subtitulo2
+{
+  font-size: 18px ;
+}
+#resultado
+{
+  box-shadow:5px 5px 5px rgb(241, 218, 11);
+  font-size: 20px;
+}
+#precision
+{
+  /*sirve para que si el texto se hace grande, la etiqueta tambien crezca de tamaño amoldandose*/
+  white-space: pre-line;
+  font-size: 20px;
+  box-shadow:5px 5px 5px rgb(241, 218, 11);
+}
+
+canvas 
+{
+  border:5px solid white;
+  border-radius:20px;
+  box-shadow:5px 5px 5px grey;
+  margin-top: 160px; 
+  animation-name: example;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes example {
+
+  from {box-shadow: 1px 1px 38px red;}
+  to {box-shadow: 1px 1px 38px yellow;}
+
+}
+#objeto, #confianza{
+  font-size: 20px;
+}
